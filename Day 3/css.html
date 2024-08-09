@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+    <style>
+        /* Element or Type Selector */
+        header{
+            background-color: aquamarine;
+        }
+        /* Id Selector(#) */
+        #heading{
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: underline;
+            margin: 10px auto;
+        }
+        /* Class Selector(.) */
+        .header-info{
+            text-align: center;
+            font-size: 20px;
+        }
+        /* Child Selector(>) -> Style for all direct childs */
+        div > a{
+            color: dodgerblue;
+        }
+        /* Decendent Selector( ) -> It doesn't matter the level of child */
+        p b u{
+            color: cadetblue;
+        }
+        /* Class Selector(.) and Id Selector(#) */
+        .textFormat#textFormating{
+            font-size: 24px;
+        }
+        /*Adjacent Sibling Selector(+) -> Works for immediate child */
+        header > h1 + div{
+            background-color: bisque;
+        }
+        /* Generous Siblings Selector(~) ->Works for every sibling */
+        header > h1 ~ p{
+            background-color: darkkhaki;
+        }
+        /* Pseudo Class Selectors(:) */
+        div > a:hover{
+            color: blue;
+        }
+        div > a:visited{
+            color: blueviolet;
+        }
+        a::selection{
+            background-color: chocolate;
+            color: white;
+        }
+        div > span:hover + ol{
+            display: block;
+        }
+        ol{
+            display: none;
+        }
+        #hover{
+            font-size: 25px;
+        }
+        #hover + ol > li{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="heading">CSS Styling</h1>
+        <div class="header-info">
+            <span>Krishna Puram, Mathura</span>        
+            <span>+91 82736xxxxx</span>      
+            <a href="https://www.linkedin.com/in/gungun-varshney-a2a66b273/" target="_blank">Linkedin</a>
+            <a href="mailto:gungunvarshney07@gmail.com">Email</a>
+            <img src="F:\java\Photo.jpg" alt="Profile Photo" height="200px" width="200px">
+        </div>
+        <p>Lorem, ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Sit asperiores odit eius optio pariatur temporibus nulla a quod doloribus earum dicta <b>necessitatibus</b> praesentium explicabo maxime quibusdam fugit, nostrum ut eligendi officiis veniam. Similique, deleniti neque. Iusto ad quia eligendi saepe.</p>
+        <p class="textFormat" id="textFormating"><b>T</b><sub>e</sub><b><u>x</u><sup>t</sup></b> <b>F</b>or<sup>m</sup><strike>at</strike><sup>t</sup><b><u>in</u></b>g</p>
+    </header>
+    <div>
+        <span id="hover">Hover over it to see the list</span>
+        <ol>
+            <li><b>J</b>ava</li>
+            <li><b>P</b>ython</li>
+            <li><b>C</b></li>
+            <li><b>H</b>TML</li>
+            <li><b>C</b>SS</li>
+        </ol>
+    </div>
+</body>
+</html>
