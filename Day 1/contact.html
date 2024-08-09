@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <script>
+        function changePage(){
+            window.location.href = 'resume.html';
+        }
+    </script>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+        <br>
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="Enter your email id" required>
+        <br>
+        <label for="phoneNo">Phone Number:</label>
+        <input type="number" placeholder="Enter your mobile number" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+        <button type="submit" onclick="changePage()">Back</button>
+</body>
+</html>
