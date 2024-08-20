@@ -59,11 +59,26 @@
         ol{
             display: none;
         }
+        li::first-letter{
+            font-weight: bold;
+            font-style: italic;
+        }
         #hover{
             font-size: 25px;
         }
         #hover + ol > li{
             color: chartreuse;
+        }
+        #container{
+            border: 1rem solid red;
+            /*Remember: It's clockwise starting from top -> top right bottom left */
+            /* padding: 20px 20px 20px 50px; */
+            /* Equal padding -> padding: 20px; */
+            padding: 7vw;
+            margin-top: 15px;
+            margin-right: 13px;
+            margin-bottom: 20px;
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -83,12 +98,15 @@
     <div>
         <span id="hover">Hover over it to see the list</span>
         <ol>
-            <li><b>J</b>ava</li>
-            <li><b>P</b>ython</li>
-            <li><b>C</b></li>
-            <li><b>H</b>TML</li>
-            <li><b>C</b>SS</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>HTML</li>
+            <li>CSS</li>
         </ol>
+    </div>
+    <div id="container">
+        Box
     </div>
 </body>
 </html>
